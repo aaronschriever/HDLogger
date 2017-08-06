@@ -5,9 +5,19 @@
     xmlns:local="using:HDlogger"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="770" Width="1315">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="850,168,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" RenderTransformOrigin="7.763,0.405" Click="SubmitButton_Click"/>
+        <TextBox x:Name="DescriptionField"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="137" Margin="183,18,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="734" TextChanged="DescriptionField_TextChanged"/>
+        <TextBox x:Name="NameField" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="10,18,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="150" TextChanged="NameField_TextChanged" />
+        <TextBox x:Name="VenueField" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="21" Margin="10,70,0,0" TextWrapping="Wrap" Text="Venue" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.481,2.512" TextChanged="VenueField_TextChanged"/>
+        <TextBox x:Name="NumberField" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="10,123,0,0" TextWrapping="Wrap" Text="Number" VerticalAlignment="Top" Width="150" TextChanged="NumberField_TextChanged"/>
+        <TextBox x:Name="LogField" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="175" Margin="10,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="907"/>
 
     </Grid>
 </Page>
